@@ -5,6 +5,9 @@ body {
     font-family: Verdana;
     font-size: 16px;
     padding: 3px;
+	background-image: url("../images/urf.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
 }
 
 h1 {
@@ -27,19 +30,19 @@ a:hover {
 }
 
 #header{
-	color: green;
+	color: yellow;
 	font-family: "Courier New";
 /*	width: 100%; */
 	height: auto;
 	border: 1px solid #000;
+/*	padding: 100px; */
 	margin-bottom:16px;
-	background-image: url("../images/duke.waving.gif");
-	background-repeat: no-repeat;
-	background-size:100% 100%;
+/*	background-image: url("../images/duke.waving.gif"); */
+	background-color: green;
 }
 
 #content{
-	color: orange;
+	color: black;
 /*	width: 100%; */
 	height:300px;
 /*	margin-right:16px; */
