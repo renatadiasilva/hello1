@@ -1,28 +1,37 @@
-/**
- * 
- */
+/* Variáveis globais */
 
-//function dizBomDia2() {
-//	
-//var person = prompt("What is your name?");
-//var length = person.length;
-//var x = prompt("Insert a number!");
-//var y = prompt("Insert another number!");
-//var sum = parseInt(x) + parseInt(y);
-//
-//alert("Hi, "+person+"!\nYour name has "+length+" characters ;)");
-////alert(person);
-//
-//alert(x + " + " + y + " = " + sum);
-//
-//}
+var myPic=document.getElementById("myImg");
+var myCaption=document.getElementById("titulofoto");
 
-function dizBomDia() {
-	alert('Bom dia!');
-}
-
+/* Ano atual no rodapé */
 document.getElementById("foot01").innerHTML =
 	"<p>&copy;  " + new Date().getFullYear() + " Daniel Almeida&Renata Silva. All rights reserved.</p>";
 
+/* mudar cor do texto */
+function textoVerde() {
+	document.getElementById("texto").style.color="green";
+}
 
+/* mudar imagem nas Fotos */
+function mudarImagem(n) {
+	myPic.src="../resources/images/foto"+n+".jpg";
+	myCaption.innerText = n+"/10";
+	if (n<10) n++;
+	else n=1;
+	return n;
+}
 
+/* lançar primeira imagens nas Fotos */
+function lancaImagem() {
+	
+myPic.src="../resources/images/foto1.jpg";
+myCaption.innerText = "1/10";
+
+var change=2;
+myPic.onclick=function() {
+	change=mudarImagem(change);
+
+}}
+
+/* carrega a imagem nas Fotos */
+myPic.onload=lancaImagem();
