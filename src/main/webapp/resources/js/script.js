@@ -3,10 +3,6 @@
 var myPic=document.getElementById("myImg");
 var myCaption=document.getElementById("titulofoto");
 
-/* Ano atual no rodapé */
-document.getElementById("foot01").innerHTML =
-	"<p>&copy;  " + new Date().getFullYear() + " Daniel Almeida&Renata Silva. All rights reserved.</p>";
-
 /* mudar cor do texto */
 function textoVerde() {
 	document.getElementById("texto").style.color="green";
